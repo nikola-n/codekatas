@@ -12,11 +12,9 @@ class PrimeFactorsTest extends TestCase
      * @param $number
      * @param $expected
      */
-    public function it_generates_prime_factors_for_1($number, $expected)
+    public function it_generates_prime_factors($number, $expected)
     {
-        var_dump($number);
         $factors = new PrimeFactors;
-
         $this->assertEquals($expected, $factors->generate($number));
     }
 
